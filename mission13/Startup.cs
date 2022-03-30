@@ -31,8 +31,6 @@ namespace mission13
             {
                 options.UseMySql(Configuration["ConnectionStrings:BowlingLeagueDbConnection"]);
             });
-
-            services.AddScoped<IBowlersRepository, EFBowlersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
